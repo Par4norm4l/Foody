@@ -1,12 +1,12 @@
 # The Foody 
 
-#Description
+# Description
 
 The foody delivery app is a mobile app that allows customers to place a food order from any of the restaurants 
 in an area using their smartphone or tablet device.
 
 
-#Visual
+# Visual
 
 The visuals of the application are simple and easy to understand. You do not have to struggle to figure out what and how to do.
 
@@ -14,7 +14,7 @@ The visuals of the application are simple and easy to understand. You do not hav
 
 
 
-#Support and Terms and Conditions
+# Support and Terms and Conditions
 
 Foody built the Authentication app as the mobile app. This SERVICE is provided by Foody and is intended for use as is. This privacy policy will explain how FoodArt uses the personal data we collect from you when you use Authentication app.
 
@@ -87,7 +87,7 @@ This policy is effective as of 2021-01-18.
 
 
 
-#License
+# License
 Copyright 2021 Irakli Gvelesiani
 
 Licensed under the Apache License, Version 2.0 (the "License");
