@@ -1,4 +1,4 @@
-package com.codingwithme.recipeapp.adapter
+package com.example.authentication
 
 import android.view.LayoutInflater
 import android.view.View

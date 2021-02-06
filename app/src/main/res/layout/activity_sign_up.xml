@@ -4,81 +4,212 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="#DFDBDB"
     tools:context=".SignUpActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/xo"/>
+        android:layout_width="156dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="524dp"
+        android:background="@drawable/shape"
+        android:foregroundGravity="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="117dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="479dp"
+        android:background="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/inputsContainer"
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="344dp"
+        android:layout_height="409dp"
+        android:background="@drawable/bck2"
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="15dp"
+            android:text="Create Account"
+            android:textColor="#3E3D3D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:background="@android:color/white"
-            android:hint="@string/Email"
+            android:id="@+id/username"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:drawableLeft="@drawable/user"
+            android:hint="@string/Username"
+            android:inputType="textEmailAddress"
             android:lines="1"
-            android:singleLine="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true" />
+
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/emailEditText"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:drawableLeft="@drawable/mail"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:lines="1"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:singleLine="true" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:hint="@string/Password"
-            android:lines="1"
             android:id="@+id/passwordEditText"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:drawableLeft="@drawable/lock"
+            android:hint="@string/Password"
             android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:layout_marginTop="10dp"
+            android:lines="1"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:layout_height="50dp"
-            android:background="@android:color/white"/>
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="0dp" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:hint="@string/confirm_password"
-            android:lines="1"
             android:id="@+id/confirmEditText"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:drawableLeft="@drawable/lock"
+            android:hint="@string/confirm_password"
             android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:layout_marginTop="10dp"
+            android:lines="1"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:layout_height="50dp"
-            android:background="@android:color/white"/>
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:buttonTint="#A3A3A3"
+                android:text="I Agree with the"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="152dp"
+                android:autoLink="all"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/terms"
+                android:textColor="#EC1010" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpButton"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"
+                android:buttonTint="#A3A3A3"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Already have an account?"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/acc"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/Transparent"
+                android:text="@string/LogIn"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/signUpButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="NotSibling" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputsContainer"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@android:color/holo_blue_bright"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:id="@+id/signUpButton"
-        android:layout_width="match_parent"
-        android:text="@string/sign_up"
-        android:layout_height="50sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

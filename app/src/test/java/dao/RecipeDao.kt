@@ -1,10 +1,10 @@
-package com.codingwithme.recipeapp.dao
+package com.codingwithme.authentication.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.codingwithme.recipeapp.entities.Recipes
+import com.codingwithme.authentication.entities.Recipes
 
 @Dao
 interface RecipeDao {

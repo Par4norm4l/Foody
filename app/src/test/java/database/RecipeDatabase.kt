@@ -1,11 +1,11 @@
-package com.codingwithme.recipeapp.database
+package com.codingwithme.authentication.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.codingwithme.recipeapp.dao.RecipeDao
-import com.codingwithme.recipeapp.entities.Recipes
+import com.codingwithme.authentication.dao.RecipeDao
+import com.codingwithme.authentication.entities.Recipes
 
 @Database(entities = [Recipes::class],version = 1,exportSchema = false)
 abstract class RecipeDatabase: RoomDatabase() {
@@ -27,5 +27,5 @@ abstract class RecipeDatabase: RoomDatabase() {
         }
     }
 
-    abstract fun recipeDao():RecipeDao
+    abstract fun recipeDao(): RecipeDao
 }

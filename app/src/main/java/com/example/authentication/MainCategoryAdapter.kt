@@ -1,11 +1,10 @@
-package com.codingwithme.recipeapp.adapter
+package com.example.authentication
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.codingwithme.authentication.entities.Recipes
-import com.example.authentication.R
 import kotlinx.android.synthetic.main.item_rv_main_category.view.*
 
 class MainCategoryAdapter: RecyclerView.Adapter<MainCategoryAdapter.RecipeViewHolder>() {

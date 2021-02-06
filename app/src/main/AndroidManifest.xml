@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Authentication">
-        <activity android:name=".DashboardActivity"></activity>
+        <activity android:name=".DashboardActivity" android:theme="@style/Theme.Design.NoActionBar"/>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LogInActivity" />
-        <activity android:name=".AuthenticationActivity">
+        <activity android:name=".SplashScreen"
+            android:label="SplashScreen"
+            android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

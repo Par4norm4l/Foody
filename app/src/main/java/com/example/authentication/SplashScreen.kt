@@ -2,27 +2,24 @@ package com.example.authentication
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_authentication.*
 
-class AuthenticationActivity : AppCompatActivity() {
+
+class SplashScreen : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_authentication)
+        setContentView(R.layout.splash_screen)
         init()
-
     }
-
-    private fun init() {
-        logInButton.setOnClickListener {
+    private fun init(){
+        Handler().postDelayed({
             val intent = Intent(this, LogInActivity::class.java)
             startActivity(intent)
-        }
-        signUpButton.setOnClickListener {
-            val intent = Intent(this, SignUpActivity::class.java)
-            startActivity(intent)
+        }, 3000)
 
-        }
 
 
     }
